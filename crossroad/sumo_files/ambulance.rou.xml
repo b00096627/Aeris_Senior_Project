@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-05-03T17:44:58.349936+04:00 by Eclipse SUMO netedit 1.26.0
+-->
+
+ <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+    <!-- VTypes -->
+
+    <vType id="emergency" minGap="1.00" maxSpeed="15.00" speedFactor="normc(2.00,0.10,0.20,2.00)" vClass="emergency" guiShape="emergency" color="red" latAlignment="center" lcStrategic="0.0" lcCooperative="0.0" lcSpeedGain="999.0" lcKeepRight="0.0" lcPushy="1.0" lcAssertive="1.0" lcImpatience="1.0" lcTimeToImpatience="0.1" lcAccelLat="5.0" jmDriveAfterRedTime="3600" jmIgnoreKeepClearTime="-1" jmIgnoreFoeSpeed="50.0" jmIgnoreFoeProb="1.0" accel="12.0" decel="1.0" sigma="0">
+
+        <param key="has.bluelight.device" value="true"/>
+
+        </vType>
+
+    <vType id="ghost_car" minGap="0.00" maxSpeed="20.00" speedFactor="normc(2.00,0.10,0.20,2.00)" vClass="emergency" guiShape="emergency" color="blue" latAlignment="center" lcStrategic="0.0" lcCooperative="0.0" lcSpeedGain="999.0" lcKeepRight="0.0" lcPushy="1.0" lcAssertive="1.0" lcImpatience="1.0" lcTimeToImpatience="0.1" lcAccelLat="5.0" jmDriveAfterRedTime="3600" jmIgnoreKeepClearTime="-1" jmIgnoreFoeSpeed="50.0" jmIgnoreFoeProb="1.0" accel="12.0" decel="1.0" sigma="0"/>
+
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+
+    <trip id="pilot_car" type="emergency" depart="0.00" departLane="free" departPos="20.00" departSpeed="max" from="E14" to="501781289#14.290"/>
+
+    <trip id="ambulance1" type="emergency" depart="10.00" departLane="free" departSpeed="max" from="E14" to="501781289#14.290"/>
+
+</routes> 

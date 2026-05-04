@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="crossroad_road">
+    <static>true</static>
+
+    <link name="road_link">
+
+      <!-- Road surface + lane markings -->
+      <visual name="road_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/road.obj</uri>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- Collision uses same mesh; disable if performance matters -->
+      <collision name="road_collision">
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.8</mu>
+              <mu2>0.8</mu2>
+            </ode>
+          </friction>
+        </surface>
+        <geometry>
+          <mesh>
+            <uri>meshes/road.obj</uri>
+          </mesh>
+        </geometry>
+      </collision>
+
+    </link>
+  </model>
+</sdf>

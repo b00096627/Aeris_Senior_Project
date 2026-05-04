@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-05-03T17:44:58.352484+04:00 by Eclipse SUMO sumo 1.26.0
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="crossroad.net.xml"/>
+        <route-files value="traffic.rou.xml,ambulance.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="0.5"/>
+    </processing>
+
+    <routing>
+        <device.rerouting.pre-period value="0"/>
+    </routing>
+
+</sumoConfiguration>

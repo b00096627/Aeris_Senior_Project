@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+
+  <vType id="emergency"
+    vClass="emergency"
+    accel="4.0"
+    decel="7.0"
+    maxSpeed="20.0" 
+    jmDriveAfterRedTime="300"
+    jmDriveAfterRedSpeed="10.0"
+    jmIgnoreKeepClearTime="0"
+    lcSpeedGain="100"
+    lcCooperative="0"
+    color="1,0,0"
+    guiShape="emergency">
+    <param key="has.bluelight.device" value="true"/>
+  </vType>
+
+  <!--
+    Departs at t=200 s — after congestion has built up on the main road.
+    SUMO automatically routes from E14 to the destination edge.
+    sumo_master_node calls changeTarget() to redirect via ROS2 waypoints.
+  -->
+  <trip id="ambulance1"
+    type="emergency"
+    depart="200"
+    departLane="free"
+    departSpeed="max"
+    from="E14"
+    to="501781289#14.290"/>
+
+</routes>

@@ -1,0 +1,11 @@
+calibration:
+  offset_x: -5090.68
+  offset_y: -8454.175
+  offset_z: 0.3
+  pivot_x: 1073.0
+  pivot_y: -602.825
+  theta: 0.0098
+
+simulation:
+  step_length: 0.1
+  gazebo_world_name: "airport_road"
